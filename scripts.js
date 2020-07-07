@@ -165,7 +165,7 @@ inp.on("close", () => {
 var g = userInput[0];
 var h = userInput[1];
 var sum = g+h;
-console.log(sum/g
+console.log(sum/2);
 });
 //Calculate five test scores and print their average
 
@@ -180,8 +180,11 @@ inp.on("line", (data) => {
 inp.on("close", () => {
 var g = userInput[0];
 var h = userInput[1];
-var sum = g+h;
-console.log(sum/g
+var t = userInput[2];
+var j = userInput[3];
+var k = userInput[4];
+var sum = g+h+t+j+k;
+console.log(sum/5);
 });
 
 //Power of any number x ^ y.
@@ -333,4 +336,56 @@ var B = userInput[1];
 var c = A*B;
 console.log(c);
 });
+
+//Give the Actual cost and Sold cost, Calculate Discount Of Product
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here1
+  
+var  A = userInput[0];
+var s = userInput[1];
+var discount = A - s;
+console.log(discount);
+});
+
+//Given their radius of a circle and find its diameter, circumference and area.
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here1
+  
+var  A = userInput[0];
+var dia = A/2;
+var AREA = ((Math.PI)*(A**2));
+var cir = 2*Math.PI*A;
+console.log(dia,AREA,cir);
+});
+
+//Given two numbers and perform all arithmetic operations.
+
+var a = parseInt(userInput[0]);
+var b = parseInt(userInput[1]);
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+
+//
 
