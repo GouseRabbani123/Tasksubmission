@@ -332,8 +332,5 @@ var  A = userInput[0];
 var B = userInput[1];
 var c = A*B;
 console.log(c);
-
-
-
 });
 
